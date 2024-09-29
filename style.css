@@ -6,21 +6,57 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+html {
+    scroll-behavior:smooth;
+  }
 header{
-    text-align: center;
+    width: 100%;
     background-color: #1877F2;
-    padding: 5px 0px;
-    color: #FFFFFF;
     /* position: sticky;
-    top:0; */
-}
-header > p{
-    font-size:medium;
-    color: #FAFAFA;
-}
+      top: 0px;
+      z-index: 1; */
+  }
+  .HeaderBody{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+  }
+  
+  header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+  }
+  
+  header nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  header nav ul li {
+      margin: 0 15px;
+      padding: 3px;
+  }
+  header nav ul li a:hover{
+     color: #1877F2;
+  }
+  
+  header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+  }
 main{
     width: 100%;
     width: auto;
+    overflow: hidden;
 }
 .section-1{
     width: 100%;
@@ -129,9 +165,9 @@ main{
 .service-details h2{
     font-size: 1.5rem;
     color: #37474F;
-    /* display: inline; */
     border-bottom: 2px solid rgba(24, 118, 242, 0.7);
     padding: 5px 5px;
+    
 }
 .service-details p{
     font-size: 1.1rem;
@@ -139,16 +175,19 @@ main{
     color: #37474F;
 }
 .service-details {
-    width: 60%;
+    width: 100%;
     text-align: justify;
 }
 
 .service-img-slider {
-    width: 40%;
-    height: 250px;
+    max-width:50vh;
+    height:27vh;
     overflow: hidden;
     position: relative;
     border-radius: 15px;
+    /* background-color: rebeccapurple; */
+    float:left;
+    /* margin:0px 20px 5px 0px; */
 }
 
 .service-img-slide {
@@ -261,7 +300,7 @@ main{
 footer{
     width: 100%;
     background-color: #1d1d1d;
-    padding: 5vh;
+    padding: 5vh 0vh;
 }
 .footer-body{
     width: 80%;
@@ -273,9 +312,12 @@ footer{
 
 }
 .footer-body .logo{
-    color: orangered;
-    font-size: 2.5rem;
     text-align: center;
+    width: 110px;
+}
+.footer-body .logo img{
+    width: 100%;
+    height: 100%;
 }
 .footer-body .socialmedia{
     text-align: center;
@@ -330,3 +372,168 @@ footer{
     font-size:small;
     text-align: center;
 }
+
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    .HeaderBody{
+        width: 90%;
+    }
+    header .logo{
+        font-size: 18px;
+    }
+    header nav{
+        display: none;
+    }
+    header nav ul{
+         display: grid;
+    }
+    .section-2-body{
+        width: 85%;
+    }
+    .section-2-body ul{
+        gap: 0px 30px;
+    }
+    .section-2-body ul li{
+        font-size: 0.80rem;
+    }
+    .section-2-body button{
+        margin-left: 40%;
+    }
+    .service{
+        display:grid;
+        padding: 20px 0px;
+        column-gap: 0px;
+    }
+    .service-details {
+        width: 100%;
+    }
+    .service-details h2{
+        font-size: 1.4rem;
+    }
+    .service-details p{
+        font-size: 1rem;
+    }
+    .service-img-slider{
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .section-4-body{
+        width: 50%;
+    }
+.section-4-body{
+    padding:2vh 5vh;
+}
+.contactform-buttons button{
+    padding: 5px 5px;
+    width: 48%;
+}
+.contactform-buttons button p{
+    font-size:small;
+}
+.footer-body{
+    width:90%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-body .logo{
+    width: 60px;
+}
+.footer-body .contact{
+    width: 30%;
+}
+.footer-body .socialmedia{
+    width: 50%;
+}
+.footer-body .socialmedia ul{
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px;
+}
+.footer-body .socialmedia ul li{
+    width:15px;
+    margin: 1px 5px;
+}
+.footer-body .socialmedia ul li a{
+    font-size:12px;
+}
+.footer-body  h4{
+    font-size: 0.70rem;
+}
+.contactdetails p{
+    font-size:0.70rem;
+}
+}
+
+/* Tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .HeaderBody{
+        width: 90%;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header nav ul li {
+        margin: 0 10px;
+    }
+    .section-2-body P{
+        font-size: 1rem;
+    }
+    .section-3-body{
+        width: 85%;
+    }
+    .service{
+        display: block;
+        padding: 20px 0px;
+    }
+    .service-img-slider{
+        max-width: 35vh;
+        height: 20vh;
+        margin:10px 15px 0px 0px;
+    }
+    .section-4-body{
+        width: 40%;
+        padding:2vh 5vh;
+    }
+    .contactform-buttons button{
+        padding: 5px 5px;
+        width: 48%;
+    }
+    .footer-body{
+        width:90%;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .footer-body .logo{
+        width: 90px;
+    }
+    .footer-body .contact{
+        width: 30%;
+    }
+    .footer-body .socialmedia{
+        width: 50%;
+    }
+    .footer-body .socialmedia ul{
+        justify-content: center;
+        align-items: flex-start;
+        padding: 5px;
+    }
+    .footer-body .socialmedia ul li{
+        margin: 1px 5px;
+    }
+    .footer-body .socialmedia ul li a{
+        font-size:15px;
+    }
+    .footercopyright{
+        font-size:medium;
+        margin-top: 10px;
+    }
+    .footer-body  h4{
+        font-size: 1.1rem;
+    }
+    .contactdetails p{
+        font-size:1rem;
+    }
+}
+
