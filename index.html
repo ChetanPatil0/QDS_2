@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QDS | Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
-        <h1>Quantify Data Solutions</h1>
-        <p>Empower Your Business Success with Quantify Data Solutions</p>
+        <div class="HeaderBody">
+            <div class="logo animate__animated animate__fadeInDown">Quantify Data Solutions</div>
+            <nav>
+                <ul class="animate__animated animate__fadeInDown">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#AboutUs">About Us</a></li>
+                    <li><a href="#ContactUs">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="section-1">
@@ -58,11 +68,23 @@
                 <button><a href="#">Learn More..</a></button>
             </div>
         </section>
-        <section class="section-3">
+        <section class="section-3" id="service">
             <h1>Our Services</h1>
-            <div class="section-3-body">
-
-                <div class="service">
+            <div class="section-3-body" >
+                <div class="service" >
+                    <div class="service-img-slider">
+                        <div class="service-img-slide">
+                            <div class="slide active">
+                                <img src="Images/Ice Hockey Home Page.jpg" alt="Slide 1">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Soccer Home Page.jpg" alt="Slide 2">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Basket Ball Home Page.jpg" alt="Slide 3">
+                            </div>
+                        </div>
+                    </div>
                     <div class="service-details">
                         <h2>Sports Analysis</h2>
                         <p>At QDS, our Sports Analysis services provide comprehensive insights across ice hockey,
@@ -77,22 +99,22 @@
                             a
                             difference.</p>
                     </div>
-                    <div class="service-img-slider">
-                        <div class="service-img-slide">
-                            <div class="slide active">
-                                <img src="Images/Ice Hockey Home Page.jpg" alt="Slide 1">
-                            </div>
-                            <div class="slide">
-                                <img src="Images/Soccer Home Page.jpg" alt="Slide 2">
-                            </div>
-                            <div class="slide">
-                                <img src="Images/Basket Ball Home Page.jpg" alt="Slide 3">
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="service">
+                    <div class="service-img-slider">
+                        <div class="service-img-slide">
+                            <div class="slide active">
+                                <img src="Images/Sports Annotation.png" alt="Slide 1">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Data Annotation for Automobile.jpg" alt="Slide 2">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Data Annotation For Healthcare.png" alt="Slide 3">
+                            </div>
+                        </div>
+                    </div>
                     <div class="service-details">
                         <h2>Data Annotation & Labelling</h2>
                         <p>At QDS, our Data Annotation and Labeling services support a wide range of industries,
@@ -108,34 +130,10 @@
                             that
                             your data is ready for AI-driven innovation.</p>
                     </div>
-                    <div class="service-img-slider">
-                        <div class="service-img-slide">
-                            <div class="slide active">
-                                <img src="Images/Sports Annotation.png" alt="Slide 1">
-                            </div>
-                            <div class="slide">
-                                <img src="Images/Data Annotation for Automobile.jpg" alt="Slide 2">
-                            </div>
-                            <div class="slide">
-                                <img src="Images/Data Annotation For Healthcare.png" alt="Slide 3">
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
 
                 <div class="service">
-                    <div class="service-details">
-                        <h2>Website & Software Development</h2>
-                        <p>Our Website and Software Development services are designed to align with your business goals.
-                            Whether it's a dynamic, interactive platform or a static, user-friendly website, we create
-                            solutions that are both functional and visually compelling. Specializing in custom software
-                            and
-                            web applications, we help enhance user experience, optimize operations, and support business
-                            growth. From simple, fast-loading websites to complex, data-driven applications, we utilize
-                            cutting-edge technology to ensure seamless performance and scalability for every project.
-                        </p>
-                    </div>
                     <div class="service-img-slider">
                         <div class="service-img-slide">
                             <div class="slide active">
@@ -149,22 +147,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="service-details">
+                        <h2>Website & Software Development</h2>
+                        <p>Our Website and Software Development services are designed to align with your business goals.
+                            Whether it's a dynamic, interactive platform or a static, user-friendly website, we create
+                            solutions that are both functional and visually compelling. Specializing in custom software
+                            and
+                            web applications, we help enhance user experience, optimize operations, and support business
+                            growth. From simple, fast-loading websites to complex, data-driven applications, we utilize
+                            cutting-edge technology to ensure seamless performance and scalability for every project.
+                        </p>
+                    </div>
                 </div>
 
+
+                
+
                 <div class="service">
-                    <div class="service-details">
-                        <h2>Data Analysis & Machine Learning</h2>
-                        <p>Our Data Analysis and Machine Learning solutions empower businesses to unlock valuable
-                            insights
-                            and make data-driven decisions. With expertise in predictive analytics, business
-                            intelligence,
-                            and machine learning algorithms, we help companies optimize their operations and forecast
-                            future
-                            trends. Whether it's analyzing large datasets for actionable insights or developing machine
-                            learning models to automate complex processes, we ensure every solution is tailored to meet
-                            your
-                            specific needs, driving efficiency and innovation.</p>
-                    </div>
                     <div class="service-img-slider">
                         <div class="service-img-slide">
                             <div class="slide active">
@@ -178,13 +177,36 @@
                             </div>
                         </div>
                     </div>
+                    <div class="service-details">
+                        <h2>Data Analysis & Machine Learning</h2>
+                        <p>Our Data Analysis and Machine Learning solutions empower businesses to unlock valuable
+                            insights
+                            and make data-driven decisions. With expertise in predictive analytics, business
+                            intelligence,
+                            and machine learning algorithms, we help companies optimize their operations and forecast
+                            future
+                            trends. Whether it's analyzing large datasets for actionable insights or developing machine
+                            learning models to automate complex processes, we ensure every solution is tailored to meet
+                            your
+                            specific needs, driving efficiency and innovation.
+                        </p>
+                    </div>
                 </div>
+                <!-- <div class="service">
+                    <div class="service-img-slider"></div>
+                        
+                    </div>
+                    <div class="service-details">
+                        <h2></h2>
+                        <p></p>
+                    </div>
+                </div> -->
             </div>
         </section>
         <section class="section-4">
               <div class="section-4-body">
                 <h2>Contact Us</h2>
-                  <form action="index.html" method="" class="contactform">
+                  <form action="index.html" method="" class="contactform" id="ContactUs">
                          <label>Full Name</label>
                          <input type="text" placeholder="Ex. John Doe" required>
 
@@ -197,8 +219,8 @@
                          <label>Message</label>
                          <textarea rows="3" placeholder="Enter Your Message Her.." required ></textarea>
                          <div class="contactform-buttons">
-                         <button>Clear</button>
-                         <button>Send Message</button>
+                         <button><p>Clear</p></button>
+                         <button><p>Send Message</p></button> 
                         </div>
                   </form>
               </div>
@@ -207,7 +229,7 @@
     <footer>
         <div class="footer-body">
             <div class="logo">
-                QDS
+                <img src="Images/QDS Logo.png" alt="logo">
             </div>
             <div class="socialmedia">
                 <h4>Follow On Social Media</h4>
@@ -222,8 +244,8 @@
             <div class="contact">
                 <h4>For any help call on bellow number</h4>
                 <div class="contactdetails">
-                <p>+91 9922327091</p>
-                <p>Harsh Marathe</p>
+                <p>+91 99xxxxxx91</p>
+                <p>John Doe</p>
             </div>
             </div>
         </div>
