@@ -7,7 +7,9 @@
     <title>QDS | Home</title>
     <link rel="stylesheet" href="style.css?v=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -15,19 +17,24 @@
         <div class="HeaderBody">
             <div class="logo animate__animated animate__fadeInDown">Quantify Data Solutions</div>
             <nav>
-                <ul class="animate__animated animate__fadeInDown">
+                <div class="Menu-Icons">
+                    <div id="OpenMenu" onclick="OpenNavMenu"><i class="fa-solid fa-bars"></i></div>
+                    <div id="CloseMenu" onclick="CloseNavMenu"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <ul class="NavItems animate__animated animate__fadeInDown">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#service">Services</a></li>
                     <li><a href="#AboutUs">About Us</a></li>
                     <li><a href="#ContactUs">Contact Us</a></li>
                 </ul>
+
             </nav>
         </div>
     </header>
     <main>
         <section class="section-1">
             <div class="section-1-body">
-                <video src="Images/Home Page QDS Video.mp4 " controls autoplay loop width="100%" height="100%"></video>
+                <video src="Images/Home Page QDS Video.mp4 " autoplay loop muted width="100%" height="100%"></video>
             </div>
         </section>
         <section class="section-2">
@@ -70,8 +77,8 @@
         </section>
         <section class="section-3" id="service">
             <h1>Our Services</h1>
-            <div class="section-3-body" >
-                <div class="service" >
+            <div class="section-3-body">
+                <div class="service">
                     <div class="service-img-slider">
                         <div class="service-img-slide">
                             <div class="slide active">
@@ -161,7 +168,7 @@
                 </div>
 
 
-                
+
 
                 <div class="service">
                     <div class="service-img-slider">
@@ -204,26 +211,30 @@
             </div>
         </section>
         <section class="section-4">
-              <div class="section-4-body">
+            <div class="section-4-body">
                 <h2>Contact Us</h2>
-                  <form action="index.html" method="" class="contactform" id="ContactUs">
-                         <label>Full Name</label>
-                         <input type="text" placeholder="Ex. John Doe" required>
+                <form action="index.html" method="" class="contactform" id="ContactUs">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Ex. John Doe" required>
 
-                         <label>Email</label>
-                         <input type="email" placeholder="Ex. abc@gmail.com" required>
+                    <label>Email</label>
+                    <input type="email" placeholder="Ex. abc@gmail.com" required>
 
-                         <label>Mobile No</label>
-                         <input type="tel" placeholder="Ex. 88xxxxxx56" required>
+                    <label>Mobile No</label>
+                    <input type="tel" placeholder="Ex. 88xxxxxx56" required>
 
-                         <label>Message</label>
-                         <textarea rows="3" placeholder="Enter Your Message Her.." required ></textarea>
-                         <div class="contactform-buttons">
-                         <button><p>Clear</p></button>
-                         <button><p>Send Message</p></button> 
-                        </div>
-                  </form>
-              </div>
+                    <label>Message</label>
+                    <textarea rows="3" placeholder="Enter Your Message Her.." required></textarea>
+                    <div class="contactform-buttons">
+                        <button>
+                            <p>Clear</p>
+                        </button>
+                        <button>
+                            <p>Send Message</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
@@ -231,7 +242,6 @@
             <div class="logo">
                 <img src="Images/QDS Logo.png" alt="logo">
             </div>
-            <p class="footercopyright">&copy;2024 QuntifyDataSolution.Com</p>
             <div class="socialmedia">
                 <h4>Follow On Social Media</h4>
                 <ul>
@@ -241,15 +251,9 @@
                     <li><a href="#"><i class="fa-solid fa-link"></i></a></li>
                 </ul>
             </div>
-            <!-- <div class="contact">
-                <h4>For any help call on bellow number</h4>
-                <div class="contactdetails">
-                <p>+91 99xxxxxx91</p>
-                <p>John Doe</p>
-            </div>
-            </div> -->
         </div>
-        
+        <p class="footercopyright">&copy;2024 QuntifyDataSolution.Com</p>
+
     </footer>
     <script>
         document.querySelectorAll('.service').forEach(service => {
@@ -279,6 +283,27 @@
             setInterval(autoSlide, 5000);
             showSlide(currentSlide);
         });
+
+
+    </script>
+    <script>
+        let OpenMenu = document.getElementById('OpenMenu');
+        let CloseMenu = document.getElementById('CloseMenu');
+        let NavItems = document.querySelector('.NavItems');
+
+        let OpenNavMenu = () => {
+           OpenMenu.style.display="None";
+           CloseMenu.style.display="block";
+           NavItems.style.display="block";
+           
+        }
+        let CloseNavMenu = () => {
+           OpenMenu.style.display="block";
+           CloseMenu.style.display="None";
+           NavItems.style.display="none";
+        }
+        // setInterval(CloseNavMenu,10000)
+        // setInterval(OpenNavMenu,5000)
     </script>
 </body>
 
