@@ -438,7 +438,7 @@ footer {
     }
 
     .NavItems {
-        /* display: none; */
+        display: none;
         background-color: rgba(29, 29, 29, 0.9);
         position:absolute;
         right:5px;
@@ -449,7 +449,6 @@ footer {
     
     .HeaderBody .Menu-Icons {
         display: block;
-        
     }
 
     #CloseMenu,
@@ -457,15 +456,16 @@ footer {
         float: right;
         font-size: x-large;
         display: none;
+        transition: 3s;
     }
 
     #OpenMenu {
         display: block;
     }
 
-    header nav ul {
-        display: grid;
-    }
+    /* header nav ul {
+         display: grid; 
+     }  */
 
     .section-2-body {
         width: 85%;
