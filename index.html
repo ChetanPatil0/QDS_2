@@ -18,8 +18,8 @@
             <div class="logo animate__animated animate__fadeInDown">Quantify Data Solutions</div>
             <nav>
                 <div class="Menu-Icons">
-                    <div id="OpenMenu" onclick="OpenNavMenu"><i class="fa-solid fa-bars"></i></div>
-                    <div id="CloseMenu" onclick="CloseNavMenu"><i class="fa-solid fa-xmark"></i></div>
+                    <div id="OpenMenu" onclick="OpenNavMenu();"><i class="fa-solid fa-bars"></i></div>
+                    <div id="CloseMenu" onclick="CloseNavMenu();"><i class="fa-solid fa-xmark"></i></div>
                 </div>
                 <ul class="NavItems animate__animated animate__fadeInDown">
                     <li><a href="index.html">Home</a></li>
@@ -302,8 +302,6 @@
            CloseMenu.style.display="None";
            NavItems.style.display="none";
         }
-        // setInterval(CloseNavMenu,10000)
-        // setInterval(OpenNavMenu,5000)
     </script>
 </body>
 
