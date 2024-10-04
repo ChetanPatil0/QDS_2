@@ -445,6 +445,7 @@ footer {
         top:46px;
         padding: 5px 0px;
         border-radius: 5px;
+        z-index:3;
     }
     
     .HeaderBody .Menu-Icons {
@@ -462,11 +463,6 @@ footer {
     #OpenMenu {
         display: block;
     }
-
-    /* header nav ul {
-         display: grid; 
-     }  */
-
     .section-2-body {
         width: 85%;
     }
