@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.mainContent {
+    width: 80%; 
+    margin: 40px auto;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    color: #1d1d1d;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.sectionTitle::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #1877F2;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.sectionText {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.expertiseListContainer, .whyChooseListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.expertiseListItem, .whyChooseListItem {
+    background-color: #f9fafb;
+    border-left: 4px solid #1877F2;
+    padding: 20px;
+    flex-basis: 45%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.expertiseListItem:hover, .whyChooseListItem:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.expertiseListItem strong, .whyChooseListItem strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1877F2;
+}
+
+.expertiseListItem p, .whyChooseListItem p {
+    margin: 0;
+    color: #1d1d1d;
+    line-height: 1.6;
+}
