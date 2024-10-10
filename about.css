@@ -36,6 +36,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.9;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 .expertiseListContainer, .whyChooseListContainer {
@@ -72,4 +73,27 @@ body {
     margin: 0;
     color: #1d1d1d;
     line-height: 1.6;
+}
+
+
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    .expertiseListContainer, .whyChooseListContainer{
+        display: grid;
+    }
+    .expertiseListItem p, .whyChooseListItem p {
+        text-align: justify;
+    }
+}
+
+/* Tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .expertiseListItem, .whyChooseListItem {
+        flex-basis: 40%;
+    }
+    
+.expertiseListContainer, .whyChooseListContainer {
+    gap: 20px 10px ;
+}
 }
