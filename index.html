@@ -1,44 +1,265 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <form action="">
-      <div class="title">
-        <h2>CONTACT</h2>
-      </div>
-      <div class="half">
-        <div class="item">
-          <label for="name">NAME</label>
-          <input type="text" id = "name">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QDS | Home</title>
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="HeaderBody">
+            <div class="logo animate__animated animate__fadeInDown">Quantify Data Solutions</div>
+            <nav>
+                <div class="Menu-Icons">
+                    <div id="OpenMenu" onclick="OpenNavMenu();"><i class="fa-solid fa-bars"></i></div>
+                    <div id="CloseMenu" onclick="CloseNavMenu();"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <ul class="NavItems animate__animated animate__fadeInDown">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#ContactUs">Contact Us</a></li>
+                </ul>
+
+            </nav>
         </div>
-        <div class="item">
-          <label for="email">EMAIL</label>
-          <input type="text" id = "email">
+    </header>
+    <main>
+        <section class="section-1">
+            <div class="section-1-body">
+                <video src="Images/Home Page QDS Video.mp4 " autoplay loop muted width="100%" height="100%"></video>
+            </div>
+        </section>
+        <section class="section-2">
+            <div class="section-2-body">
+                <h2>Why QDS?</h2>
+                <p>At Quantify Data Solutions (QDS), we provide specialized solutions that set us apart in the industry.
+                    Here's why clients choose us:</p>
+                <ul>
+                    <li>
+                        <h3>Expertise Across Multiple Domains:</h3> Our services cover Sports Analysis, Data Annotation
+                        &
+                        Labeling, Website & Software Development, and Data Analysis & Machine Learning. We bring
+                        in-depth
+                        knowledge and experience to each project, ensuring the highest level of precision and insight.
+                    </li>
+                    <li>
+                        <h3>Customer Satisfaction:</h3> We are committed to understanding our clients' needs and
+                        exceeding
+                        expectations. Client success is our success, and we take pride in offering a seamless experience
+                        from start to finish.
+                    </li>
+                    <li>
+                        <h3>Cost-Effective Solutions:</h3> We understand the importance of budget-friendly services. Our
+                        solutions are not only affordable but also designed to maximize value for your investment.
+                    </li>
+                    <li>
+                        <h3>Uncompromising Quality:</h3> At QDS, quality is our top priority. We focus on delivering
+                        accurate
+                        results, timely project completion, and thorough attention to detail in every task.
+                    </li>
+                    <li>
+                        <h3>A Skilled and Committed Team:</h3> Our team is our greatest asset. With a large group of
+                        skilled
+                        professionals across different areas of expertise, we ensure that every project is handled by
+                        experts who are fully dedicated to your success.
+                    </li>
+                </ul>
+                <button><a href="#">Learn More..</a></button>
+            </div>
+        </section>
+        <section class="section-3" id="service">
+            <h1>Our Services</h1>
+            <div class="section-3-body">
+                <div class="service">
+                    <div class="service-img-slider">
+                        <div class="service-img-slide">
+                            <div class="slide active">
+                                <img src="Images/Ice Hockey Home Page.jpg" alt="Slide 1">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Soccer Home Page.jpg" alt="Slide 2">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Basket Ball Home Page.jpg" alt="Slide 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <h2>Sports Analysis</h2>
+                        <p>At QDS, our Sports Analysis services provide comprehensive insights across ice hockey,
+                            soccer,
+                            and basketball. Our team tracks key moments such as player movements, strategic shifts, and
+                            game-changing events. From face-offs and power plays in ice hockey to goals, assists, and
+                            tactical formations in soccer, and scoring efficiency and defensive dynamics in basketball,
+                            we
+                            deliver data-driven analysis to help teams refine their strategies and enhance performance.
+                            With
+                            a focus on accuracy and detail, we ensure that every game is broken down in a way that makes
+                            a
+                            difference.</p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-img-slider">
+                        <div class="service-img-slide">
+                            <div class="slide active">
+                                <img src="Images/Sports Annotation.png" alt="Slide 1">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Data Annotation for Automobile.jpg" alt="Slide 2">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Data Annotation For Healthcare.png" alt="Slide 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <h2>Data Annotation & Labelling</h2>
+                        <p>At QDS, our Data Annotation and Labeling services support a wide range of industries,
+                            including
+                            sports, automobile, healthcare, and object detection. We provide accurate and detailed
+                            annotations to train machine learning models and enhance AI applications. From tagging
+                            player
+                            movements and game events in sports to annotating autonomous driving data for the automobile
+                            industry, our team ensures precise labeling that meets the highest standards. In the
+                            healthcare
+                            sector, we annotate medical images for diagnostic tools, while our object detection services
+                            deliver reliable labeling for a variety of applications. Our dedication to quality ensures
+                            that
+                            your data is ready for AI-driven innovation.</p>
+                    </div>
+                </div>
+
+
+                <div class="service">
+                    <div class="service-img-slider">
+                        <div class="service-img-slide">
+                            <div class="slide active">
+                                <img src="Images/Website Development for home page.jpg" alt="Slide 1">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Software Development for home page.jpg" alt="Slide 2">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Website Development for home page.jpg" alt="Slide 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <h2>Website & Software Development</h2>
+                        <p>Our Website and Software Development services are designed to align with your business goals.
+                            Whether it's a dynamic, interactive platform or a static, user-friendly website, we create
+                            solutions that are both functional and visually compelling. Specializing in custom software
+                            and
+                            web applications, we help enhance user experience, optimize operations, and support business
+                            growth. From simple, fast-loading websites to complex, data-driven applications, we utilize
+                            cutting-edge technology to ensure seamless performance and scalability for every project.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="service">
+                    <div class="service-img-slider">
+                        <div class="service-img-slide">
+                            <div class="slide active">
+                                <img src="Images/Data Analysis.jpg" alt="Slide 1">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Machine Learning.jpg" alt="Slide 2">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/Sports Annotation.png" alt="Slide 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <h2>Data Analysis & Machine Learning</h2>
+                        <p>Our Data Analysis and Machine Learning solutions empower businesses to unlock valuable
+                            insights
+                            and make data-driven decisions. With expertise in predictive analytics, business
+                            intelligence,
+                            and machine learning algorithms, we help companies optimize their operations and forecast
+                            future
+                            trends. Whether it's analyzing large datasets for actionable insights or developing machine
+                            learning models to automate complex processes, we ensure every solution is tailored to meet
+                            your
+                            specific needs, driving efficiency and innovation.
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="service">
+                    <div class="service-img-slider"></div>
+                        
+                    </div>
+                    <div class="service-details">
+                        <h2></h2>
+                        <p></p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="section-4-body">
+                <h2>Contact Us</h2>
+                <form action="index.html" method="" class="contactform" id="ContactUs">
+                    <div class="inputfeildgroup">
+                        <div class="feilds">
+                            <label>Full Name</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="feilds">
+                            <label>Email</label>
+                            <input type="email" required>
+                        </div>
+                    </div>
+                    <div class="feilds">
+                        <label>Message</label>
+                        <textarea rows="3" required></textarea>
+                    </div>
+                    <div class="contactform-buttons">
+                        <button>
+                            <p>Reset</p>
+                        </button>
+                        <button>
+                            <p>Send Message</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-body">
+            <div class="logo">
+                <img src="Images/QDS Logo.png" alt="logo">
+            </div>
+            <div class="socialmedia">
+                <h4>Follow On Social Media</h4>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-link"></i></a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="full">
-        <label for="message">MESSAGE</label>
-        <textarea name="" id = "message" rows="2"></textarea>
-      </div>
-      <div class="action">
-        <input type="submit" value = "SEND MESSAGE">
-        <input type="reset" value = "RESET">
-      </div>
-      <div class="icons">
-        <a href="" class = "fa fa-twitter"></a>
-        <a href="" class = "fa fa-facebook"></a>
-        <a href="" class = "fa fa-instagram"></a>
-        <a href="" class = "fa fa-github"></a>
-      </div>
-    </form>
-  </body>
+        <p class="footercopyright">&copy;2024 QuntifyDataSolution.Com</p>
+
+    </footer>
+    <script src="index.js">
+    </script>
+</body>
+
 </html>
