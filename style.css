@@ -529,7 +529,7 @@ footer {
         display: grid;
     }
     .contactform input{
-        width: 110%;
+        width: 100%;
     }
     .contactform .inputfeild{
         width: 100%;
