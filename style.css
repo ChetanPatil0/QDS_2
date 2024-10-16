@@ -242,7 +242,7 @@ main {
 
 .section-4 {
     width: 100%;
-    background: url('Images/Website\ Development\ for\ home\ page.jpg');
+    background: url('Images/contact-form-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -250,21 +250,19 @@ main {
 }
 
 .section-4-body {
-    width: 40%;
+    width: 30%;
     margin: auto;
     padding: 5vh 7vh;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
     border-radius: 5px;
-    /* outline: 3px solid #1877F2; */
+    box-shadow: 0px 0px 10px 5px #FFFFFF;
 }
 
 .section-4-body h2 {
-    text-transform: capitalize;
-    border-bottom: 3px solid #1877F2;
-    display: inline;
-    color: #1877F2;
-    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
     padding: 5px 0px;
 }
 
@@ -275,32 +273,35 @@ main {
 .contactform .inputfeildgroup{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    gap: 2%; 
+}
+.contactform .inputfeildgroup div{
+    width:49%;
 }
 .contactform .feilds{
     display: grid;
-    width: 98.5%;
+    width: 100%;
+    margin-bottom: 2vh;
 }
 .contactform label {
     font-size: 1rem;
     font-weight: bold;
-    color: #1D1D1D;
+    color: #FFFFFF;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
 .contactform input,
 .contactform textarea {
-    padding: 10px 2px;
+    padding: 10px 5px;
     font-size: medium;
     background-color: transparent;
     border: 1px solid gray;
     resize: none;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
-.contactform input{
-    width: 95%;
-}
+
 .contactform input:hover,
 .contactform textarea:hover {
     border: 1px solid black;
@@ -313,47 +314,28 @@ main {
 }
 
 .section-4-body .contactform-buttons {
-    display: flex;
     margin-top: 20px;
 }
 
 .contactform-buttons button {
-    width: 30%;
+    width: 20%;
     padding: 7px 2px;
     border-radius: 2px;
-}
-
-.contactform-buttons button:nth-child(1) {
-    border: 1px solid #dc3545;
+    border: 1px solid #1877F2;
     background-color: transparent;
     border-radius: 5px;
-    color: #dc3545;
+    background-color: #1877F2;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
     margin-right: 10px;
 }
 
-.contactform-buttons button:nth-child(1):focus {
-    box-shadow: 0px 0px 5px #dc3545;
-    background-color: #dc3545;
-    color: #FFFFFF;
-}
 
-.contactform-buttons button:nth-child(2) {
-    border: 1px solid #28a745;
-    background-color: transparent;
-    border-radius: 5px;
-    color: #28a745;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-}
 
-.contactform-buttons button:nth-child(2):focus {
-    box-shadow: 0px 0px 5px #28a745;
-    background-color: #28a745;
-    color: #FFFFFF;
+.contactform-buttons button:focus {
+    box-shadow: 0px 0px 5px #1877F2;
 }
 
 footer {
@@ -365,21 +347,8 @@ footer {
 .footer-body {
     width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
-.footer-body .logo {
-    text-align: center;
-    width: 20%;
-}
-
-.footer-body .logo img {
-    width: 110px;
-    height: 100%;
-}
 
 .footer-body .socialmedia {
     text-align: center;
@@ -387,7 +356,7 @@ footer {
 
 .footer-body .socialmedia ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
     align-items: center;
@@ -407,7 +376,7 @@ footer {
 }
 
 .footer-body .socialmedia ul li:nth-child(1) {
-    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    background-color: #d93025;
 }
 
 .footer-body .socialmedia ul li:nth-child(2) {
@@ -415,7 +384,7 @@ footer {
 }
 
 .footer-body .socialmedia ul li:nth-child(3) {
-    background-color: #1877F2;
+    background-color: #4CAF50;
 }
 
 .footer-body .socialmedia ul li:nth-child(4) {
@@ -523,15 +492,16 @@ footer {
     .section-4-body {
         padding: 2vh 5vh;
         width: 60%;
-    }
-    .contactform .inputfeildgroup{
+    }.contactform .inputfeildgroup {
         width: 100%;
         display: grid;
     }
-    .contactform input{
+    .contactform input, 
+    .contactform textarea {
         width: 100%;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
     }
-    .contactform .inputfeild{
+    .contactform .inputfeildgroup div {
         width: 100%;
     }
     .contactform-buttons button {
@@ -545,18 +515,8 @@ footer {
 
     .footer-body {
         width: 80%;
-        justify-content: space-around;
-        align-items: flex-start;
     }
 
-    .footer-body .logo {
-        width: 60px;
-    }
-
-    .footer-body .socialmedia {
-        width: 50%;
-        margin-top: 20px;
-    }
 
     .footer-body .socialmedia ul {
         justify-content: center;
@@ -632,18 +592,11 @@ footer {
         align-items: flex-start;
     }
 
-    .footer-body .logo {
-        width: 90px;
-    }
-
     .footer-body .contact {
         width: 30%;
     }
 
-    .footer-body .socialmedia {
-        width: 50%;
-        margin-top: 20px;
-    }
+    
 
     .footer-body .socialmedia ul {
         justify-content: center;
